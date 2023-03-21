@@ -43,11 +43,14 @@ label {
     display: flex;
     justify-content: space-around;
     margin: 10px auto;
+    /* height: 35px; */
+
 }
 input {
     /* padding: 10px; */
     font-size: 24px;
     border: none;
+    height: 35px;
     /* margin-bottom: 20px; */
 }
 
