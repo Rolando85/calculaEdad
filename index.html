@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu edad</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <p>Calculador de edad <hr> ingrese su nombre, fecha de nacimiento y obtendra su edad exacta. (años meses y dias).</p>
+        <form>
+            <label>Ingrese nombre y fecha de nacimiento</label>
+            <div class="inputs">
+                <input type="text" placeholder="ingrese su nombre" id="nombre" required>
+                <input type="date" id="birthdate" required>
+            </div>
+
+            <button type="submit">Calcular Edad</button>
+        </form>
+        <div id="result" class="result">--</div>
+    </div>
+
+
+	<script src="index.js"></script>
+</body>
+</html>
