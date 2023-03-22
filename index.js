@@ -20,4 +20,15 @@ if (birthdate > today) {
     result.style.color='rgb(0, 0, 0)'
     result.innerHTML = `Hola <b>${nombre}</b> tu edad es: <b>${diffYears}</b> años, <b>${diffMonths}</b> meses y <b>${diffDays}</b> días.`;
   }
+
+  ver_ms()
 });
+
+function ver_ms(){
+    document.querySelector('.cont_res').classList.add('ver_res')
+}
+
+document.querySelector('.res_closs').addEventListener('click',function(){
+    document.querySelector('.cont_res').classList.remove('ver_res')
+    
+})

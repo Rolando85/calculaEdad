@@ -71,7 +71,39 @@ button {
    text-align: center;
    color: rgb(240, 248, 255);
 }
-
+.cont_res{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background-color: rgb(130, 201, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transform: translateY(-200%);
+    transition: .5s;
+}
+.res_closs{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(251, 102, 102);
+    color: aqua;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 30px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+}
+.ver_res{
+    transform: translateY(0%);
+ 
+}
 @media(max-width:900px){
     .inputs{
         width: 100%;
@@ -83,6 +115,10 @@ button {
         font-size: 20px;
     }
     form{width: 80%;}
+    .cont_res{
+        left: 5%;
+        right: 5%;
+    }
 }
 @media(max-width:576px){
     .inputs{
@@ -92,7 +128,18 @@ button {
         width: 60%;
         margin: 10px auto;
     }
+    label{
+        font-size: 20px;
+    }
     form{
         width: 100%;
+    }
+    .cont_res{
+        left: 0%;
+        right: 0%;
+    }
+    .res_closs{
+        right: 50%;
+        top: -30px;
     }
 }
